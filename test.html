@@ -1,0 +1,462 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg" />
+      </a-assets>
+      <a-entity environment="preset: tron; dressingAmount: 500"></a-entity>
+
+      <a-assets>
+        <img
+          id="my-image"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fignite%232.png?v=1580958872937"
+        />
+        <img
+          id="tv-trivia"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fthumbnails%2FTV_Trivia.png?1580820958998"
+        />
+        <img
+          id="keyboard"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fkeyboard.png?v=1580821064928"
+        />
+        <img
+          id="placement"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fmock_placement.png?v=1580820954098"
+        />
+        <img
+          id="brain-chase"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fbrain%20chase.png?v=1580820951617"
+        />
+        <img
+          id="coc"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FCoding%231.png?v=1580822493128"
+        />
+        <img
+          id="webber"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FWeber%231.png?v=1580822502714"
+        />
+
+        <!-- schedule -->
+        <img
+          id="c1"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010815.png?1581709283807"
+        />
+        <img
+          id="c2"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010656.png?1581709287541"
+        />
+        <img
+          id="c3"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010807.png?1581709291899"
+        />
+        <img
+          id="c4"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010744.png?1581709296435"
+        />
+        <img
+          id="c5"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010759.png?1581709301422"
+        />
+        <img
+          id="c6"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010841.png?1581709302371"
+        />
+        <img
+          id="c7"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2F20200215_010807.png?1581709291899"
+        />
+
+        <!-- //schedule -->
+
+        <img
+          id="schedule"
+          src="https://cdn.glitch.com/50addbec-9696-48c8-9f16-7274aedfb744%2Fthumbnails%2Fschedule%20(1080%C3%97763)%20(2).jpg?1581710164428"
+        />
+      </a-assets>
+      <a-curvedimage
+        src="#my-image"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 -90 0"
+        scale="4.8 3.8 1.8"
+        position="-16.64325 5.120429270222064 -11.42351"
+        geometry="thetaLength: 50"
+        animation="property: object3D.position.y; to: 8; dir: alternate; loop: true"
+        event-set__enter="_event: mouseenter; _target: #igniteText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #igniteText; visible: false"
+      ></a-curvedimage>
+      <a-image
+        src="#placement"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 12.35457 0"
+        event-set__enter="_event: mouseenter; _target: #mockText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #mockText; visible: false"
+      ></a-image>
+
+      <a-image
+        src="#webber"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 9.15467 -4.28793"
+        event-set__enter="_event: mouseenter; _target: #webberText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #webberText; visible: false"
+      ></a-image>
+      <a-image
+        src="#tv-trivia"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 4.77423 -4.228"
+        event-set__enter="_event: mouseenter; _target: #tvText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #tvText; visible: false"
+      ></a-image>
+      <a-image
+        src="#keyboard"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 2.63908 0"
+        event-set__enter="_event: mouseenter; _target: #keyboardText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #keyboardText; visible: false"
+      ></a-image>
+      <a-image
+        src="#coc"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 4.4772 5.1511"
+        event-set__enter="_event: mouseenter; _target: #cocText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #cocText; visible: false"
+      ></a-image>
+      <a-image
+        src="#brain-chase"
+        height="3.0"
+        rotation="0 90 0"
+        scale="3 1 1"
+        position="20 9.115 4.76036"
+        event-set__enter="_event: mouseenter; _target: #brainText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #brainText; visible: false"
+      ></a-image>
+
+      <!-- schedule images -->
+      <a-image
+        src="#c1"
+        height="1.0"
+        rotation="0 180 0"
+        scale="2 2 2"
+        position="0 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #brainText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #brainText; visible: false"
+      ></a-image>
+
+      <a-image
+        src="#c1"
+        height="1.0"
+        rotation="0 180 0"
+        scale="2 2 2"
+        position="0 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i4Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i4Text; visible: false"
+      ></a-image>
+
+      <a-image
+        src="#c2"
+        height="1.0"
+        rotation="0 180 0"
+        scale="2 2 2"
+        position="3 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i3Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i3Text; visible: false"
+      ></a-image>
+      <a-image
+        src="#c3"
+        height="1.0"
+        rotation="2 200 0"
+        scale="2 2 2"
+        position="6 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i2Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i2Text; visible: false"
+      ></a-image>
+      <a-image
+        src="#c4"
+        height="1.0"
+        rotation="0 180 0"
+        scale="2 2 2"
+        position="-3 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i5Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i5Text; visible: false"
+      ></a-image>
+      <a-image
+        src="#c5"
+        height="1.0"
+        rotation="0 160 0"
+        scale="2 2 2"
+        position="-6 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i6Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i6Text; visible: false"
+      ></a-image>
+      <a-image
+        src="#c6"
+        height="1.0"
+        rotation="0 150 0"
+        scale="2 2 2"
+        position="-9 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i7Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i7Text; visible: false"
+      ></a-image>
+      <a-image
+        src="#c4"
+        height="1.0"
+        rotation="0 210 0"
+        scale="2 2 2"
+        position="9 3.115 14.76036"
+        event-set__enter="_event: mouseenter; _target: #i1Text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #i1Text; visible: false"
+      ></a-image>
+      <!-- //schedule images -->
+      <!-- text -->
+      <a-entity
+        id="webberText"
+        text="value: Webber"
+        position="20 7.0122 11.07091"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="mockText"
+        text="value: Mock\nPlacement; align: center; color:#ff3300"
+        position="20 7.0122 0.173"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="brainText"
+        text="value: Brain\nChase; align: center; color:#1aa3ff"
+        position="20 7.0122 0.173"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="cocText"
+        text="value: Clash\nOf\nCoders; align: center; color:#66ff33"
+        position="20 7.0122 0.173"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="keyboardText"
+        text="value: Keyboard\nShuffling; align: center; color:#ff3333"
+        position="20 7.0122 0.173"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="tvText"
+        text="value: TV\nTrivia; align: center; color:#ff0"
+        position="20 7.0122 0.173"
+        scale="25 25 20"
+        rotation="0 -90 0"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="EventText"
+        text="value: EVENTS; align: center"
+        position="20 0.7122 0.173"
+        scale="20 20 20"
+        rotation="0 -90 0"
+      ></a-entity>
+
+      <!-- schedule -->
+      <a-entity
+        id="i1Text"
+        text="value: Participant Reporting Time; align: center; color:##3399ff"
+        position="9 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 200 0"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="i2Text"
+        text="value: Inauguration Ceremony; align: center; color:##3399ff"
+        position="6 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 195 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="i3Text"
+        text="value: First Round; align: center; color:##3399ff"
+        position="0 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 180 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="i4Text"
+        text="value: Lunch Break; align: center; color:##3399ff"
+        position="0 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 180 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="i5Text"
+        text="value: Second Round; align: center; color:##3399ff"
+        position="0 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 180 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="i6Text"
+        text="value: Third Round; align: center; color:##3399ff"
+        position="-6 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 160 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="i7Text"
+        text="value: Prize Distribution; align: center; color:##3399ff"
+        position="-9 1.115 14.76036"
+        scale="20 20 20"
+        rotation="0 150 0"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="ScheduleText"
+        text="value: Schedule; align: center; color:#ff0"
+        position="0 5.7122 10.173"
+        scale="20 20 20"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        id="t1Text"
+        text="value: 10\nAM; align: center; color: #fff"
+        position="8.6475 3.07173 14"
+        scale="8 8 8"
+        rotation="0 210 0"
+      ></a-entity>
+
+      <a-entity
+        id="t2Text"
+        text="value: 10:30\nAM; align: center; color: #fff"
+        position="5.78442 3.072 14"
+        scale="8 8 8"
+        rotation="0 200 0"
+      ></a-entity>
+      <a-entity
+        id="t3Text"
+        text="value: 11-1\nPM; align: center; color: #fff"
+        position="2.86725 3.07173 14"
+        scale="8 8 8"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        id="t4Text"
+        text="value: 1-2PM\nLunch; align: center; color: #fff"
+        position="0 3.07173 14"
+        scale="8 8 8"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        id="t5Text"
+        text="value: 2-3\nPM; align: center; color: #fff"
+        position="-2.81424 3.07173 14"
+        scale="8 8 8"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        id="t6Text"
+        text="value: 3-4\nPM; align: center; color: #fff"
+        position="-5.6731 3.07173 14"
+        scale="8 8 8"
+        rotation="0 160 0"
+      ></a-entity>
+      <a-entity
+        id="t7Text"
+        text="value: 4:30\nPM; align: center; color: #fff"
+        position="-8.57504 3.07173 14"
+        scale="8 8 8"
+        rotation="0 150 0"
+      ></a-entity>
+      <!-- //schedule -->
+
+      <a-entity
+        id="igniteText"
+        text="value: #Learn #Explore #Innovate; color: #ff8040; font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt"
+        rotation="0 90 0"
+        position="-16.6 1.20734 -4.35062"
+        scale="20 20 20"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="dateText"
+        text="value: Invitation for SAT, FEB 15; font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt"
+        rotation=""
+        position="5.07195 0.95485 -9.07771"
+        scale="20 20 20"
+      ></a-entity>
+      
+      <a-entity
+        id="movingText"
+        text="value: We are waiting for your arrival:); font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt"
+        rotation="0 0 0"
+        position="0 0.8 -4.0"
+        scale="4 4 4"
+        animation="property: position;from:3 0.8 -4; to: -2.5 0.8 -4; dir:alternate; dur: 7500; easing: linear; loop:true"
+      ></a-entity>
+      <!-- //text -->
+
+      <a-assets>
+        <video
+          id="myvideo"
+          autoplay
+          loop="true"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FVID-20200206-WA0006.mp4?v=1580985924658"
+        ></video>
+      </a-assets>
+      <a-video
+        src="#myvideo"
+        width="3"
+        height="1.5"
+        position="0 6.5 -13"
+        material=""
+        geometry="height: 1.54"
+        rotation="0 0 0"
+        scale="6 6 6"
+      ></a-video>
+      <!--
+      <a-entity video-controls="src:#myvideo" position="0 1 -10" visible="false"></a-entity>
+-->
+      <a-camera>
+        <a-cursor
+          color="#fff"
+          material=""
+          raycaster=""
+          cursor="fuseTimeout: 500"
+          geometry=""
+        ></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

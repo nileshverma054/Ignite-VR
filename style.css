@@ -1,0 +1,45 @@
+/* CSS files add styling rules to your content */
+
+body {
+background:#ff4d4d;
+}
+
+.box {
+  position: absolute;
+  top: 15%;
+}
+
+.title{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size:70px;
+  
+}
+.para-text{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size:30px;
+  
+}
+.card-text{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size:20px;
+  
+}
+
+.logo{
+  width:100%;
+}
+
+.profile{
+    width:30%;
+  }
+
+@media (max-width: 576px) 
+{ 
+ 
+  .box {
+    top:5%;
+  }
+  .profile{
+    width:75%;
+  }
+}
