@@ -1,6 +1,9 @@
 # Live Demo: 
 http://bit.ly/ignite2k20-invitation 
 
+This is a virtual reality project based on VR web framework named aframe.io
+Check the live demo using above link
+
 Welcome to Glitch
 =================
 
